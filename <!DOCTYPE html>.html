@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Junk Runner Hauling & Removal</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #000;
+      font-family: Arial, sans-serif;
+      color: white;
+      text-align: center;
+    }
+
+    header {
+      padding: 30px 10px;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      color: white;
+      text-shadow: 0 0 10px #39ff14, 0 0 20px #39ff14;
+    }
+
+    nav {
+      margin-bottom: 20px;
+    }
+
+    nav button {
+      background-color: #39ff14;
+      color: black;
+      font-weight: bold;
+      border: none;
+      padding: 10px 20px;
+      margin: 5px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    nav button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 10px #39ff14;
+    }
+
+    .logo {
+      width: 200px;
+      height: auto;
+      margin: 10px 0 20px;
+    }
+
+    .cta-buttons {
+      margin: 20px auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .cta-buttons button {
+      background-color: #000;
+      color: white;
+      border: 2px solid #39ff14;
+      box-shadow: 0 0 10px #39ff14;
+      border-radius: 10px;
+      padding: 12px 25px;
+      cursor: pointer;
+      font-size: 1em;
+      transition: 0.3s;
+    }
+
+    .cta-buttons button:hover {
+      transform: scale(1.05);
+      background-color: #39ff14;
+      color: black;
+    }
+
+    section {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 20px;
+    }
+
+    .highlight-box {
+      border: 2px solid #39ff14;
+      box-shadow: 0 0 10px #39ff14;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 20px auto;
+      text-align: center;
+    }
+
+    ul {
+      list-style-type: disc;
+      text-align: left;
+      margin-left: 30%;
+    }
+
+    .green-box {
+      background-color: #006400;
+      border: 2px solid #39ff14;
+      box-shadow: 0 0 10px #39ff14;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 20px auto;
+      text-align: center;
+      width: 80%;
+      max-width: 700px;
+    }
+
+    form {
+      background-color: #111;
+      border: 2px solid #39ff14;
+      box-shadow: 0 0 10px #39ff14;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 600px;
+      text-align: left;
+    }
+
+    form label {
+      display: block;
+      margin-top: 10px;
+    }
+
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: none;
+    }
+
+    form input[type="checkbox"] {
+      width: auto;
+    }
+
+    .submit-btn {
+      background-color: #39ff14;
+      color: black;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      padding: 10px 20px;
+      margin-top: 15px;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .submit-btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 10px #39ff14;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding: 20px;
+      background-color: #111;
+      border-top: 2px solid #39ff14;
+      text-align: center;
+    }
+
+    footer a {
+      color: #39ff14;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Junk Runner Hauling & Removal</h1>
+    <img src="images/junkrunnerlogo.jpg_small" alt="Junk Runner Logo" class="logo">
+
+    <nav>
+      <button onclick="scrollToSection('home')">Home</button>
+      <button onclick="scrollToSection('about')">About</button>
+      <button onclick="scrollToSection('pricing')">Pricing</button>
+      <button onclick="scrollToSection('quote')">Get Quote</button>
+      <button onclick="scrollToSection('contact')">Contact</button>
+    </nav>
+
+    <div class="cta-buttons">
+      <button onclick="window.location.href='tel:+13523634974'">📞 Click to Call or Text (352) 363-4974</button>
+      <button onclick="scrollToSection('quote')">Book Junk Removal</button>
+    </div>
+  </header>
+
+  <section id="home">
+    <div class="highlight-box">
+      <h2>Junk Removal</h2>
+      <p>
+        Tired of unwanted junk items and debris taking up space at home or your business? Junk Runner Hauling and Removal service is here! Built to handle everything from heavy old furniture to accumulated garbage and broken appliances! We will ensure that your space is clear of unsightly junk and disposed of responsibly! We're here to help!
+      </p>
+      <ul>
+        <li>Basic Junk Removal</li>
+        <li>Estate Cleanout Services</li>
+        <li>Removal Services</li>
+        <li>Garage & Attic Cleanout Services</li>
+        <li>Eviction Cleanout Services</li>
+        <li>Garbage Cleanout</li>
+        <li>Furniture Removal Services</li>
+        <li>Hoarding Cleanouts</li>
+        <li>Property Cleanout Services</li>
+        <li>Same Day & Next Day Junk Removal Services</li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="green-box">
+    <h2>STEP 1 - Contact Us!</h2>
+    <p>Call Or text us at (352) 363-4974 Or email us at Junkrunnerhaulingremoval@gmail.com or fill out the online form below. You can even message us on Facebook! We'll Provide free estimates based on the volume of your request!</p>
+  </div>
+
+  <div class="green-box">
+    <h2>STEP 2 - Schedule an Appointment!</h2>
+    <p>We'll contact you to arrange a time to visit your location at a time that is most convenient for you! We will arrive on time and ready to get to work.</p>
+  </div>
+
+  <div class="green-box">
+    <h2>STEP 3 - Junk Removal</h2>
+    <p>Professionals will handle all the loading and heavy lifting as well as cleanup of the area while you kick back and relax we'll take care of all the dirty work! Once it's all gone you'll be able to enjoy a nice clean space!</p>
+  </div>
+
+  <section id="about">
+    <h2>About Junk Runner Hauling & Removal</h2>
+    <p>
+      Junk Runner Hauling & Removal is a locally owned and operated business run by an Ocala native who has lived in the town for over 20 years. The green truck used for hauling is a cherished family heirloom — the very first vehicle purchased by the owner's grandfather, a classic Chevy S10, now serving the community once again through honest, dependable junk removal services. We take pride in offering trustworthy, personalized service to every customer.
+    </p>
+  </section>
+
+  <section id="pricing">
+    <h2>Transparent Junk Removal Pricing</h2>
+    <p>We keep things simple and fair. Our pricing is based on how much space your junk takes up in our 1.5 cubic yard truck bed. Whether you have a single item or a full load, here’s what to expect:</p>
+    <ul>
+      <li><strong>Single Item Removal:</strong> Starting at $60</li>
+      <li><strong>Minimum Load:</strong> $75 (up to one-third truck bed)</li>
+      <li><strong>Partial Load:</strong> $110 (around half truck bed)</li>
+      <li><strong>Full Truck Load:</strong> $175 (entire truck bed)</li>
+      <li><strong>Additional Fees:</strong> Some items like hazardous materials or heavy appliances may have extra charges.</li>
+    </ul>
+  </section>
+
+  <section id="quote">
+    <h2>Get a Quote!</h2>
+    <p>Professional, Quick and Reliable Junk Removal and Hauling. Just Call, Text, Email us or fill out the form below to discuss your needs. We've got you covered!</p>
+    <form id="quoteForm" onsubmit="return handleFormSubmit(event)">
+      <h3>Fill out the info below and we'll give you a quick quote!</h3>
+      <label>Name:</label>
+      <input type="text" required>
+
+      <label>Phone:</label>
+      <input type="tel" required>
+
+      <label>Email:</label>
+      <input type="email" required>
+
+      <label>Service Address:</label>
+      <input type="text" required>
+
+      <label>How can we service you?</label>
+      <textarea rows="4" required></textarea>
+
+      <label><input type="checkbox" id="verify" required> Human Verification, I am not a Robot.</label>
+      <button class="submit-btn" type="submit">Submit Request</button>
+    </form>
+  </section>
+
+  <footer id="contact">
+    <h2>Contact!</h2>
+    <p>📞 <a href="tel:+13523634974">(352) 363-4974</a></p>
+    <p>📧 <a href="mailto:Junkrunnerhaulingremoval@gmail.com">Junkrunnerhaulingremoval@gmail.com</a></p>
+    <p>📘 <a href="https://www.facebook.com/people/Junk-Runner-Hauling-Removal/61582903651598/#" target="_blank">Find Us On Facebook!</a></p>
+    <p>Hours: Mon-Sun - 7:00am - 5:00pm</p>
+    <p>© 2025 Junk Runner Hauling & Removal. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    function scrollToSection(id) {
+      document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+    }
+
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      const verified = document.getElementById("verify").checked;
+      if (!verified) {
+        alert("Please verify that you are not a robot before submitting.");
+        return false;
+      }
+      window.location.href = "mailto:Junkrunnerhaulingremoval@gmail.com";
+      alert("Thank you! Your request will open in your email client.");
+      return false;
+    }
+  </script>
+</body>
+</html>
